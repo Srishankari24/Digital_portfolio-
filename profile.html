@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet"herf="style.css">
+        <title>
+            Your Name - Portfolio
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img aling="left" src="My Photo.jpg" alt="your Profile Picture" class="profile-picture">
+                <h1>SRI SANKARI</h1>
+                <p><h3>Student</h3></p>
+            </div>
+        </header>
+        <footer>
+        <nav>
+            <ul>
+                <li><a herf= "#about">About</a></li>
+                <li><a herf= "#qualification">Qualification</a></li>
+                <li><a herf= "#skills">Skills</a></li>
+                <li><a herf= "#resume">Resume</a></li>
+            </ul>
+        </nav>
+        </footer>
+        <section id="about">
+            <div class="section-content">
+            <h2>About</h2>
+            <p>I am Sri Sankari.And I am organised,Self-Motivated person.<br>I lived in Tirupur.And I Love to explore new thing</p>
+
+            </div>
+        </section>
+        <section id="qualification">
+            <div class="section-content">
+                <h2>Qualification</h2>
+                <p>B.Sc.CS in Tiruppur Kumaran College For Women @ Tirupur.</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C,C++,Java Programming Language</li>
+                    <li>Web Development(using HTML and CSS)</li>
+                    <li>MS-Office</li>
+                    <li>Visual Basics</li>
+                </ul>
+            </div>
+        </section>
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h2>Resume</h2>
+                    <a href="resume_SRI SANKARI G_19-10-2023.pdf"class="downloadcv-button">Open Resume</a>
+                </div>
+            </center>
+        </section>
+    <style>
+        body,h1,h2,p{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:rgb(4, 51, 78)
+            margin: 20px;
+        
+        }
+        header{
+            background-color: rgb(1, 18, 34);
+            color:white;
+            text-align:center;
+            padding: 20px;
+        }
+        .profile-picture{
+            width: 100px;
+            height: 100px;
+            border-radius: 55%;
+        }
+        nav li{
+            background-color: rgb(4, 51, 78);
+            color:black;
+            text-align: center;
+        }
+        nav ul li{
+            display: inline;
+            margin: 20px;
+        }
+        nav ul li {
+            text-decoration: none;
+            color:aliceblue;
+            font-weight: bold;
+        }
+        .section-content{
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px #202120;
+        }
+        .downloadcv-button{
+            background-color: rgb(4, 51, 78);
+            color: aliceblue;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .download-button:hover:hover {
+            background-color: aqua;
+        }
+        footer{
+            text-align: center;
+            padding: 1rem;
+            background-color: rgb(4, 51, 78);
+            color: aliceblue;
+            margin-top: 20px;
+        }
+        ul{
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        #nav li:hover{
+            background-color: antiquewhite;
+        }
+    </style>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+            anchor.addEventListener('click',function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('herf').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    </body>
+</html>
